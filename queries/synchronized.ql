@@ -19,13 +19,13 @@ predicate hasNoSyncronizedThis(Callable ca) {
   // Maybe check that the syncronized statement starts before and ends after a the write.
 }
 
-// from Class c, Method m, Field f
-// where 
-//   isMethodInThreadSafeAnnotatedClass(c, m)
-//   and not m.hasName("<obinit>")
-//   and m.accesses(f)
-//   and hasNoSyncronizedThis(m)
-// select m, "Writes to a field. Consider it being in a syncronized block."
+from Class c, Method m, Field f
+where 
+  isMethodInThreadSafeAnnotatedClass(c, m)
+  and not m.hasName("<obinit>")
+  and m.accesses(f)
+  and hasNoSyncronizedThis(m)
+select m, "Writes to a field. Consider it being in a syncronized block."
 
-from Class c
-select c, sum(c.getNumberOfLinesOfCode())
+// from Class c
+// select c, sum(c.getNumberOfLinesOfCode())
