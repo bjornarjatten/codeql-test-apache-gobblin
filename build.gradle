@@ -18,6 +18,12 @@
 
 apply from: 'gradle/scripts/environment.gradle'
 
+plugins {
+    // Apply the application plugin to add support for building a CLI application in Java.
+    id 'application'
+    id "com.github.spotbugs" version "6.0.7"
+}
+
 buildscript {
   apply from: 'gradle/scripts/repositories.gradle'
   apply from: 'gradle/scripts/defaultBuildProperties.gradle'
