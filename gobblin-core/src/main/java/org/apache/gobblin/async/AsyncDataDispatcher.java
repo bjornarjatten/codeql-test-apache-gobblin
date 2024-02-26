@@ -44,6 +44,8 @@ import javax.annotation.concurrent.NotThreadSafe;
  * @param <D> type of record
  */
 @NotThreadSafe
+// We assume that our queries should find something here
+@ThreadSafe
 public abstract class AsyncDataDispatcher<D> extends AbstractExecutionThreadService {
   private static final Logger LOG = LoggerFactory.getLogger(AsyncDataDispatcher.class);
 

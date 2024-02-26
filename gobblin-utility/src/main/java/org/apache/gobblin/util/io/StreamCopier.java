@@ -37,6 +37,8 @@ import org.apache.gobblin.util.limiter.Limiter;
  * A class that copies an {@link InputStream} to an {@link OutputStream} in a configurable way.
  */
 @NotThreadSafe
+// We assume that our queries should find something here
+@ThreadSafe
 public class StreamCopier {
 
   private static final int KB = 1024;

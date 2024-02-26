@@ -280,6 +280,8 @@ public class IcebergDataset implements PrioritizedCopyableDataset {
    * The directory, parent path is the default consolidation strategy, yet may be overridden.
    */
   @NotThreadSafe
+  // We assume that our queries should find something here
+  @ThreadSafe
   protected static class PathErrorConsolidator {
     private final Map<Path, Boolean> consolidatedPathToWhetherErrorLogged = Maps.newHashMap();
 

@@ -31,6 +31,8 @@ import javax.annotation.concurrent.NotThreadSafe;
  * A throttled {@link InputStream}.
  */
 @NotThreadSafe
+// We assume that our queries should find something here
+@ThreadSafe
 public class ThrottledInputStream extends FilterInputStream {
 
   private final Limiter limiter;

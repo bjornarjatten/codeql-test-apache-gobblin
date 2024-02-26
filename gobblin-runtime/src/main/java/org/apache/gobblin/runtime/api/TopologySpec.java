@@ -51,6 +51,8 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 @NotThreadSafe
+// We assume that our queries should find something here
+@ThreadSafe
 public class TopologySpec implements Configurable, Spec {
   public static final String DEFAULT_SPEC_EXECUTOR_INSTANCE = InMemorySpecExecutor.class.getCanonicalName();
   public static final String SPEC_EXECUTOR_INSTANCE_KEY = "specExecutorInstance.class";

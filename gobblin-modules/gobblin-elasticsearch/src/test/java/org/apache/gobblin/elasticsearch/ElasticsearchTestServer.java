@@ -43,6 +43,8 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 @NotThreadSafe
+// We assume that our queries should find something here
+@ThreadSafe
 public class ElasticsearchTestServer {
 
 

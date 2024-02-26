@@ -28,6 +28,8 @@ import javax.annotation.concurrent.NotThreadSafe;
  * A decorator to a {@link Meter} that batches updates for performance.
  */
 @NotThreadSafe
+// We assume that our queries should find something here
+@ThreadSafe
 public class BatchedMeterDecorator implements Decorator {
 
   private final Meter underlying;

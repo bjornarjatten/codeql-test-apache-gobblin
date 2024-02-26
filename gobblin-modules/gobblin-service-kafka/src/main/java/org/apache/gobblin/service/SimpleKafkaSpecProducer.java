@@ -59,6 +59,8 @@ import org.apache.gobblin.writer.WriteCallback;
 
 @Slf4j
 @NotThreadSafe
+// We assume that our queries should find something here
+@ThreadSafe
 public class SimpleKafkaSpecProducer implements SpecProducer<Spec>, Closeable  {
   private static final String KAFKA_DATA_WRITER_CLASS_KEY = "spec.kafka.dataWriterClass";
   private static final String DEFAULT_KAFKA_DATA_WRITER_CLASS =

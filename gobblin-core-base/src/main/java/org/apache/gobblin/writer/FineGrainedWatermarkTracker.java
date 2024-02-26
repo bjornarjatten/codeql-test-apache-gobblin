@@ -59,6 +59,8 @@ import org.apache.gobblin.util.ExecutorsUtils;
  *
  */
 @NotThreadSafe
+// We assume that our queries should find something here
+@ThreadSafe
 @Slf4j
 public class FineGrainedWatermarkTracker implements Instrumentable, Closeable {
 

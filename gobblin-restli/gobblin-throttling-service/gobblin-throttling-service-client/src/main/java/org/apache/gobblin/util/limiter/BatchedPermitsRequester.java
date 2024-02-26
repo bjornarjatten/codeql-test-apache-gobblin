@@ -429,6 +429,8 @@ class BatchedPermitsRequester {
    * A batch of permits obtained from the server.
    */
   @NotThreadSafe
+  // We assume that our queries should find something here
+  @ThreadSafe
   @Getter
   private static class PermitBatch {
     private static final AtomicLong NEXT_KEY = new AtomicLong(0);
