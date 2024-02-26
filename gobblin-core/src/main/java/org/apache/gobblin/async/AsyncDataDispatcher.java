@@ -30,6 +30,7 @@ import org.slf4j.LoggerFactory;
 import com.google.common.util.concurrent.AbstractExecutionThreadService;
 
 import javax.annotation.concurrent.NotThreadSafe;
+import javax.annotation.concurrent.ThreadSafe;
 
 
 /**

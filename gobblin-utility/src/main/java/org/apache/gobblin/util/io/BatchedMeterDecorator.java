@@ -22,7 +22,7 @@ import com.codahale.metrics.Meter;
 import org.apache.gobblin.util.Decorator;
 
 import javax.annotation.concurrent.NotThreadSafe;
-
+import javax.annotation.concurrent.ThreadSafe;
 
 /**
  * A decorator to a {@link Meter} that batches updates for performance.

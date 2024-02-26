@@ -25,7 +25,7 @@ import java.io.InputStream;
 import org.apache.gobblin.util.limiter.Limiter;
 
 import javax.annotation.concurrent.NotThreadSafe;
-
+import javax.annotation.concurrent.ThreadSafe;
 
 /**
  * A throttled {@link InputStream}.

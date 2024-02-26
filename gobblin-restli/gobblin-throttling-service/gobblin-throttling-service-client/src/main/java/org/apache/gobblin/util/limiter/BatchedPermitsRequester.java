@@ -60,6 +60,7 @@ import org.apache.gobblin.util.Sleeper;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import javax.annotation.Nullable;
 import javax.annotation.concurrent.NotThreadSafe;
+import javax.annotation.concurrent.ThreadSafe;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;

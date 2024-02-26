@@ -38,6 +38,7 @@ import com.google.common.collect.Maps;
 import com.typesafe.config.Config;
 
 import javax.annotation.concurrent.NotThreadSafe;
+import javax.annotation.concurrent.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 import org.apache.gobblin.configuration.ConfigurationKeys;

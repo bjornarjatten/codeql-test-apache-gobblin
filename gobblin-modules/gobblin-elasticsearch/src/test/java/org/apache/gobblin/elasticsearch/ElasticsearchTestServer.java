@@ -35,6 +35,7 @@ import org.testng.Assert;
 import com.google.common.base.Throwables;
 
 import javax.annotation.concurrent.NotThreadSafe;
+import javax.annotation.concurrent.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 
