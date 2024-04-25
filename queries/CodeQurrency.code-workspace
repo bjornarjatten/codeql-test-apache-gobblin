@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "[week04 source archive]",
+			"uri": "codeql-zip-archive://1-108/c:\\Users\\bjorn\\Documents\\GitHub\\PCPP2022-Public-TeamDP\\week04\\code-exercises\\week04exercises\\week04\\src.zip"
+		},
+		{
+			"name": "[week06 source archive]",
+			"uri": "codeql-zip-archive://1-108/c:\\Users\\bjorn\\Documents\\GitHub\\PCPP2022-Public-TeamDP\\week06\\code-exercises\\week06exercises\\week06\\src.zip"
+		}
+	],
+	"settings": {}
+}
